@@ -1,0 +1,524 @@
+2025-08-07 15:48:27 warning: Base directory C:\xampp\htdocs\foodcoopshop\tmp\cache\html_purifier does not exist,
+                    please create or change using %Cache.SerializerPath in C:\xampp\htdocs\foodcoopshop\vendor\ezyang\htmlpurifier\library\HTMLPurifier\DefinitionCache\Serializer.php on line 232
+Trace:
+Cake\Error\ErrorTrap->handleError() [internal], line ??
+C:\xampp\htdocs\foodcoopshop\vendor\ezyang\htmlpurifier\library\HTMLPurifier\DefinitionCache\Serializer.php C:\xampp\htdocs\foodcoopshop\vendor\ezyang\htmlpurifier\library\HTMLPurifier\DefinitionCache\Serializer.php, line 232
+HTMLPurifier_DefinitionCache_Serializer->_prepareDir() C:\xampp\htdocs\foodcoopshop\vendor\ezyang\htmlpurifier\library\HTMLPurifier\DefinitionCache\Serializer.php, line 125
+HTMLPurifier_DefinitionCache_Serializer->cleanup() C:\xampp\htdocs\foodcoopshop\vendor\ezyang\htmlpurifier\library\HTMLPurifier\DefinitionCache\Decorator.php, line 108
+HTMLPurifier_DefinitionCache_Decorator->cleanup() C:\xampp\htdocs\foodcoopshop\vendor\ezyang\htmlpurifier\library\HTMLPurifier\DefinitionCache\Decorator\Cleanup.php, line 72
+HTMLPurifier_DefinitionCache_Decorator_Cleanup->get() C:\xampp\htdocs\foodcoopshop\vendor\ezyang\htmlpurifier\library\HTMLPurifier\Config.php, line 505
+HTMLPurifier_Config->getDefinition() C:\xampp\htdocs\foodcoopshop\vendor\ezyang\htmlpurifier\library\HTMLPurifier\Config.php, line 415
+HTMLPurifier_Config->getHTMLDefinition() C:\xampp\htdocs\foodcoopshop\vendor\ezyang\htmlpurifier\library\HTMLPurifier\Generator.php, line 74
+HTMLPurifier_Generator->__construct() C:\xampp\htdocs\foodcoopshop\vendor\ezyang\htmlpurifier\library\HTMLPurifier.php, line 158
+HTMLPurifier->purify() C:\xampp\htdocs\foodcoopshop\src\Services\SanitizeService.php, line 55
+App\Services\SanitizeService->App\Services\{closure}() [internal], line ??
+C:\xampp\htdocs\foodcoopshop\src\Services\SanitizeService.php C:\xampp\htdocs\foodcoopshop\src\Services\SanitizeService.php, line 48
+App\Services\SanitizeService->stripTagsAndPurifyRecursive() C:\xampp\htdocs\foodcoopshop\src\Controller\CustomersController.php, line 203
+App\Controller\CustomersController->newPasswordRequest() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Controller\Controller.php, line 505
+Cake\Controller\Controller->invokeAction() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 166
+Cake\Controller\ControllerFactory->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 141
+Cake\Controller\ControllerFactory->invoke() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 362
+Cake\Http\BaseApplication->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 86
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\markstory\asset_compress\src\Middleware\AssetCompressMiddleware.php, line 64
+AssetCompress\Middleware\AssetCompressMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 115
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\authorization\src\Middleware\RequestAuthorizationMiddleware.php, line 110
+Authorization\Middleware\RequestAuthorizationMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\authorization\src\Middleware\AuthorizationMiddleware.php, line 136
+Authorization\Middleware\AuthorizationMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php, line 106
+Authentication\Middleware\AuthenticationMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Middleware\EncryptedCookieMiddleware.php, line 93
+Cake\Http\Middleware\EncryptedCookieMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 117
+Cake\Routing\Middleware\RoutingMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php, line 169
+Cake\Http\Middleware\CsrfProtectionMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 70
+Cake\Routing\Middleware\AssetMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+DebugKit\Middleware\DebugKitMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 60
+Cake\Http\Runner->run() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Server.php, line 104
+Cake\Http\Server->run() C:\xampp\htdocs\foodcoopshop\webroot\index.php, line 37
+[main]
+
+Request URL: /neues-passwort-anfordern
+Referer URL: http://foodcoopshop.local/neues-passwort-anfordern
+Client IP: 127.0.0.1
+2025-08-07 15:48:28 warning: Base directory C:\xampp\htdocs\foodcoopshop\tmp\cache\html_purifier does not exist,
+                    please create or change using %Cache.SerializerPath in C:\xampp\htdocs\foodcoopshop\vendor\ezyang\htmlpurifier\library\HTMLPurifier\DefinitionCache\Serializer.php on line 232
+Trace:
+Cake\Error\ErrorTrap->handleError() [internal], line ??
+C:\xampp\htdocs\foodcoopshop\vendor\ezyang\htmlpurifier\library\HTMLPurifier\DefinitionCache\Serializer.php C:\xampp\htdocs\foodcoopshop\vendor\ezyang\htmlpurifier\library\HTMLPurifier\DefinitionCache\Serializer.php, line 232
+HTMLPurifier_DefinitionCache_Serializer->_prepareDir() C:\xampp\htdocs\foodcoopshop\vendor\ezyang\htmlpurifier\library\HTMLPurifier\DefinitionCache\Serializer.php, line 20
+HTMLPurifier_DefinitionCache_Serializer->add() C:\xampp\htdocs\foodcoopshop\vendor\ezyang\htmlpurifier\library\HTMLPurifier\DefinitionCache\Decorator.php, line 52
+HTMLPurifier_DefinitionCache_Decorator->add() C:\xampp\htdocs\foodcoopshop\vendor\ezyang\htmlpurifier\library\HTMLPurifier\DefinitionCache\Decorator\Cleanup.php, line 29
+HTMLPurifier_DefinitionCache_Decorator_Cleanup->add() C:\xampp\htdocs\foodcoopshop\vendor\ezyang\htmlpurifier\library\HTMLPurifier\Config.php, line 518
+HTMLPurifier_Config->getDefinition() C:\xampp\htdocs\foodcoopshop\vendor\ezyang\htmlpurifier\library\HTMLPurifier\Config.php, line 415
+HTMLPurifier_Config->getHTMLDefinition() C:\xampp\htdocs\foodcoopshop\vendor\ezyang\htmlpurifier\library\HTMLPurifier\Generator.php, line 74
+HTMLPurifier_Generator->__construct() C:\xampp\htdocs\foodcoopshop\vendor\ezyang\htmlpurifier\library\HTMLPurifier.php, line 158
+HTMLPurifier->purify() C:\xampp\htdocs\foodcoopshop\src\Services\SanitizeService.php, line 55
+App\Services\SanitizeService->App\Services\{closure}() [internal], line ??
+C:\xampp\htdocs\foodcoopshop\src\Services\SanitizeService.php C:\xampp\htdocs\foodcoopshop\src\Services\SanitizeService.php, line 48
+App\Services\SanitizeService->stripTagsAndPurifyRecursive() C:\xampp\htdocs\foodcoopshop\src\Controller\CustomersController.php, line 203
+App\Controller\CustomersController->newPasswordRequest() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Controller\Controller.php, line 505
+Cake\Controller\Controller->invokeAction() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 166
+Cake\Controller\ControllerFactory->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 141
+Cake\Controller\ControllerFactory->invoke() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 362
+Cake\Http\BaseApplication->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 86
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\markstory\asset_compress\src\Middleware\AssetCompressMiddleware.php, line 64
+AssetCompress\Middleware\AssetCompressMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 115
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\authorization\src\Middleware\RequestAuthorizationMiddleware.php, line 110
+Authorization\Middleware\RequestAuthorizationMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\authorization\src\Middleware\AuthorizationMiddleware.php, line 136
+Authorization\Middleware\AuthorizationMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php, line 106
+Authentication\Middleware\AuthenticationMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Middleware\EncryptedCookieMiddleware.php, line 93
+Cake\Http\Middleware\EncryptedCookieMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 117
+Cake\Routing\Middleware\RoutingMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php, line 169
+Cake\Http\Middleware\CsrfProtectionMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 70
+Cake\Routing\Middleware\AssetMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+DebugKit\Middleware\DebugKitMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 60
+Cake\Http\Runner->run() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Server.php, line 104
+Cake\Http\Server->run() C:\xampp\htdocs\foodcoopshop\webroot\index.php, line 37
+[main]
+
+Request URL: /neues-passwort-anfordern
+Referer URL: http://foodcoopshop.local/neues-passwort-anfordern
+Client IP: 127.0.0.1
+2025-08-07 15:48:28 warning: Base directory C:\xampp\htdocs\foodcoopshop\tmp\cache\html_purifier does not exist,
+                    please create or change using %Cache.SerializerPath in C:\xampp\htdocs\foodcoopshop\vendor\ezyang\htmlpurifier\library\HTMLPurifier\DefinitionCache\Serializer.php on line 232
+Trace:
+Cake\Error\ErrorTrap->handleError() [internal], line ??
+C:\xampp\htdocs\foodcoopshop\vendor\ezyang\htmlpurifier\library\HTMLPurifier\DefinitionCache\Serializer.php C:\xampp\htdocs\foodcoopshop\vendor\ezyang\htmlpurifier\library\HTMLPurifier\DefinitionCache\Serializer.php, line 232
+HTMLPurifier_DefinitionCache_Serializer->_prepareDir() C:\xampp\htdocs\foodcoopshop\vendor\ezyang\htmlpurifier\library\HTMLPurifier\DefinitionCache\Serializer.php, line 125
+HTMLPurifier_DefinitionCache_Serializer->cleanup() C:\xampp\htdocs\foodcoopshop\vendor\ezyang\htmlpurifier\library\HTMLPurifier\DefinitionCache\Decorator.php, line 108
+HTMLPurifier_DefinitionCache_Decorator->cleanup() C:\xampp\htdocs\foodcoopshop\vendor\ezyang\htmlpurifier\library\HTMLPurifier\DefinitionCache\Decorator\Cleanup.php, line 31
+HTMLPurifier_DefinitionCache_Decorator_Cleanup->add() C:\xampp\htdocs\foodcoopshop\vendor\ezyang\htmlpurifier\library\HTMLPurifier\Config.php, line 518
+HTMLPurifier_Config->getDefinition() C:\xampp\htdocs\foodcoopshop\vendor\ezyang\htmlpurifier\library\HTMLPurifier\Config.php, line 415
+HTMLPurifier_Config->getHTMLDefinition() C:\xampp\htdocs\foodcoopshop\vendor\ezyang\htmlpurifier\library\HTMLPurifier\Generator.php, line 74
+HTMLPurifier_Generator->__construct() C:\xampp\htdocs\foodcoopshop\vendor\ezyang\htmlpurifier\library\HTMLPurifier.php, line 158
+HTMLPurifier->purify() C:\xampp\htdocs\foodcoopshop\src\Services\SanitizeService.php, line 55
+App\Services\SanitizeService->App\Services\{closure}() [internal], line ??
+C:\xampp\htdocs\foodcoopshop\src\Services\SanitizeService.php C:\xampp\htdocs\foodcoopshop\src\Services\SanitizeService.php, line 48
+App\Services\SanitizeService->stripTagsAndPurifyRecursive() C:\xampp\htdocs\foodcoopshop\src\Controller\CustomersController.php, line 203
+App\Controller\CustomersController->newPasswordRequest() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Controller\Controller.php, line 505
+Cake\Controller\Controller->invokeAction() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 166
+Cake\Controller\ControllerFactory->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 141
+Cake\Controller\ControllerFactory->invoke() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 362
+Cake\Http\BaseApplication->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 86
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\markstory\asset_compress\src\Middleware\AssetCompressMiddleware.php, line 64
+AssetCompress\Middleware\AssetCompressMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 115
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\authorization\src\Middleware\RequestAuthorizationMiddleware.php, line 110
+Authorization\Middleware\RequestAuthorizationMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\authorization\src\Middleware\AuthorizationMiddleware.php, line 136
+Authorization\Middleware\AuthorizationMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php, line 106
+Authentication\Middleware\AuthenticationMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Middleware\EncryptedCookieMiddleware.php, line 93
+Cake\Http\Middleware\EncryptedCookieMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 117
+Cake\Routing\Middleware\RoutingMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php, line 169
+Cake\Http\Middleware\CsrfProtectionMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 70
+Cake\Routing\Middleware\AssetMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+DebugKit\Middleware\DebugKitMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 60
+Cake\Http\Runner->run() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Server.php, line 104
+Cake\Http\Server->run() C:\xampp\htdocs\foodcoopshop\webroot\index.php, line 37
+[main]
+
+Request URL: /neues-passwort-anfordern
+Referer URL: http://foodcoopshop.local/neues-passwort-anfordern
+Client IP: 127.0.0.1
+2025-08-07 15:48:28 error: {"email":{"account_inactive":"Dein Mitgliedskonto ist nicht mehr aktiv. Falls du es wieder aktivieren m\u00f6chtest, schreib uns bitte eine E-Mail."}}
+2025-08-07 15:48:28 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Error\Renderer\HtmlErrorRenderer.php:37) in C:\xampp\htdocs\foodcoopshop\templates\element\layout\header.php on line 25
+Trace:
+Cake\Error\ErrorTrap->handleError() [internal], line ??
+C:\xampp\htdocs\foodcoopshop\templates\element\layout\header.php C:\xampp\htdocs\foodcoopshop\templates\element\layout\header.php, line 25
+C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php, line 1187
+Cake\View\View->_evaluate() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php, line 1144
+Cake\View\View->_render() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php, line 1689
+Cake\View\View->_renderElement() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php, line 676
+Cake\View\View->element() C:\xampp\htdocs\foodcoopshop\templates\layout\default.php, line 19
+C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php, line 1187
+Cake\View\View->_evaluate() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php, line 1144
+Cake\View\View->_render() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php, line 837
+Cake\View\View->renderLayout() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php, line 796
+Cake\View\View->render() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Controller\Controller.php, line 712
+Cake\Controller\Controller->render() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Controller\Controller.php, line 516
+Cake\Controller\Controller->invokeAction() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 166
+Cake\Controller\ControllerFactory->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 141
+Cake\Controller\ControllerFactory->invoke() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 362
+Cake\Http\BaseApplication->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 86
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\markstory\asset_compress\src\Middleware\AssetCompressMiddleware.php, line 64
+AssetCompress\Middleware\AssetCompressMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 115
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\authorization\src\Middleware\RequestAuthorizationMiddleware.php, line 110
+Authorization\Middleware\RequestAuthorizationMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\authorization\src\Middleware\AuthorizationMiddleware.php, line 136
+Authorization\Middleware\AuthorizationMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php, line 106
+Authentication\Middleware\AuthenticationMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Middleware\EncryptedCookieMiddleware.php, line 93
+Cake\Http\Middleware\EncryptedCookieMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 117
+Cake\Routing\Middleware\RoutingMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php, line 169
+Cake\Http\Middleware\CsrfProtectionMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 70
+Cake\Routing\Middleware\AssetMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+DebugKit\Middleware\DebugKitMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 60
+Cake\Http\Runner->run() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Server.php, line 104
+Cake\Http\Server->run() C:\xampp\htdocs\foodcoopshop\webroot\index.php, line 37
+[main]
+
+Request URL: /neues-passwort-anfordern
+Referer URL: http://foodcoopshop.local/neues-passwort-anfordern
+Client IP: 127.0.0.1
+2025-08-07 15:48:28 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Error\Renderer\HtmlErrorRenderer.php:37) in C:\xampp\htdocs\foodcoopshop\templates\element\layout\header.php on line 26
+Trace:
+Cake\Error\ErrorTrap->handleError() [internal], line ??
+C:\xampp\htdocs\foodcoopshop\templates\element\layout\header.php C:\xampp\htdocs\foodcoopshop\templates\element\layout\header.php, line 26
+C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php, line 1187
+Cake\View\View->_evaluate() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php, line 1144
+Cake\View\View->_render() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php, line 1689
+Cake\View\View->_renderElement() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php, line 676
+Cake\View\View->element() C:\xampp\htdocs\foodcoopshop\templates\layout\default.php, line 19
+C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php, line 1187
+Cake\View\View->_evaluate() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php, line 1144
+Cake\View\View->_render() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php, line 837
+Cake\View\View->renderLayout() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php, line 796
+Cake\View\View->render() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Controller\Controller.php, line 712
+Cake\Controller\Controller->render() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Controller\Controller.php, line 516
+Cake\Controller\Controller->invokeAction() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 166
+Cake\Controller\ControllerFactory->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 141
+Cake\Controller\ControllerFactory->invoke() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 362
+Cake\Http\BaseApplication->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 86
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\markstory\asset_compress\src\Middleware\AssetCompressMiddleware.php, line 64
+AssetCompress\Middleware\AssetCompressMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 115
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\authorization\src\Middleware\RequestAuthorizationMiddleware.php, line 110
+Authorization\Middleware\RequestAuthorizationMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\authorization\src\Middleware\AuthorizationMiddleware.php, line 136
+Authorization\Middleware\AuthorizationMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php, line 106
+Authentication\Middleware\AuthenticationMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Middleware\EncryptedCookieMiddleware.php, line 93
+Cake\Http\Middleware\EncryptedCookieMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 117
+Cake\Routing\Middleware\RoutingMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php, line 169
+Cake\Http\Middleware\CsrfProtectionMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 70
+Cake\Routing\Middleware\AssetMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+DebugKit\Middleware\DebugKitMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 60
+Cake\Http\Runner->run() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Server.php, line 104
+Cake\Http\Server->run() C:\xampp\htdocs\foodcoopshop\webroot\index.php, line 37
+[main]
+
+Request URL: /neues-passwort-anfordern
+Referer URL: http://foodcoopshop.local/neues-passwort-anfordern
+Client IP: 127.0.0.1
+2025-08-07 15:48:28 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Error\Renderer\HtmlErrorRenderer.php:37) in C:\xampp\htdocs\foodcoopshop\templates\element\layout\header.php on line 27
+Trace:
+Cake\Error\ErrorTrap->handleError() [internal], line ??
+C:\xampp\htdocs\foodcoopshop\templates\element\layout\header.php C:\xampp\htdocs\foodcoopshop\templates\element\layout\header.php, line 27
+C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php, line 1187
+Cake\View\View->_evaluate() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php, line 1144
+Cake\View\View->_render() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php, line 1689
+Cake\View\View->_renderElement() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php, line 676
+Cake\View\View->element() C:\xampp\htdocs\foodcoopshop\templates\layout\default.php, line 19
+C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php, line 1187
+Cake\View\View->_evaluate() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php, line 1144
+Cake\View\View->_render() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php, line 837
+Cake\View\View->renderLayout() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php, line 796
+Cake\View\View->render() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Controller\Controller.php, line 712
+Cake\Controller\Controller->render() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Controller\Controller.php, line 516
+Cake\Controller\Controller->invokeAction() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 166
+Cake\Controller\ControllerFactory->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 141
+Cake\Controller\ControllerFactory->invoke() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 362
+Cake\Http\BaseApplication->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 86
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\markstory\asset_compress\src\Middleware\AssetCompressMiddleware.php, line 64
+AssetCompress\Middleware\AssetCompressMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 115
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\authorization\src\Middleware\RequestAuthorizationMiddleware.php, line 110
+Authorization\Middleware\RequestAuthorizationMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\authorization\src\Middleware\AuthorizationMiddleware.php, line 136
+Authorization\Middleware\AuthorizationMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php, line 106
+Authentication\Middleware\AuthenticationMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Middleware\EncryptedCookieMiddleware.php, line 93
+Cake\Http\Middleware\EncryptedCookieMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 117
+Cake\Routing\Middleware\RoutingMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php, line 169
+Cake\Http\Middleware\CsrfProtectionMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 70
+Cake\Routing\Middleware\AssetMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+DebugKit\Middleware\DebugKitMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 60
+Cake\Http\Runner->run() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Server.php, line 104
+Cake\Http\Server->run() C:\xampp\htdocs\foodcoopshop\webroot\index.php, line 37
+[main]
+
+Request URL: /neues-passwort-anfordern
+Referer URL: http://foodcoopshop.local/neues-passwort-anfordern
+Client IP: 127.0.0.1
+2025-08-07 15:48:28 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Error\Renderer\HtmlErrorRenderer.php:37) in C:\xampp\htdocs\foodcoopshop\templates\element\layout\header.php on line 28
+Trace:
+Cake\Error\ErrorTrap->handleError() [internal], line ??
+C:\xampp\htdocs\foodcoopshop\templates\element\layout\header.php C:\xampp\htdocs\foodcoopshop\templates\element\layout\header.php, line 28
+C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php, line 1187
+Cake\View\View->_evaluate() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php, line 1144
+Cake\View\View->_render() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php, line 1689
+Cake\View\View->_renderElement() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php, line 676
+Cake\View\View->element() C:\xampp\htdocs\foodcoopshop\templates\layout\default.php, line 19
+C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php, line 1187
+Cake\View\View->_evaluate() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php, line 1144
+Cake\View\View->_render() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php, line 837
+Cake\View\View->renderLayout() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php, line 796
+Cake\View\View->render() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Controller\Controller.php, line 712
+Cake\Controller\Controller->render() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Controller\Controller.php, line 516
+Cake\Controller\Controller->invokeAction() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 166
+Cake\Controller\ControllerFactory->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 141
+Cake\Controller\ControllerFactory->invoke() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 362
+Cake\Http\BaseApplication->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 86
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\markstory\asset_compress\src\Middleware\AssetCompressMiddleware.php, line 64
+AssetCompress\Middleware\AssetCompressMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 115
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\authorization\src\Middleware\RequestAuthorizationMiddleware.php, line 110
+Authorization\Middleware\RequestAuthorizationMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\authorization\src\Middleware\AuthorizationMiddleware.php, line 136
+Authorization\Middleware\AuthorizationMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php, line 106
+Authentication\Middleware\AuthenticationMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Middleware\EncryptedCookieMiddleware.php, line 93
+Cake\Http\Middleware\EncryptedCookieMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 117
+Cake\Routing\Middleware\RoutingMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php, line 169
+Cake\Http\Middleware\CsrfProtectionMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 70
+Cake\Routing\Middleware\AssetMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+DebugKit\Middleware\DebugKitMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 60
+Cake\Http\Runner->run() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Server.php, line 104
+Cake\Http\Server->run() C:\xampp\htdocs\foodcoopshop\webroot\index.php, line 37
+[main]
+
+Request URL: /neues-passwort-anfordern
+Referer URL: http://foodcoopshop.local/neues-passwort-anfordern
+Client IP: 127.0.0.1
+2025-08-07 15:48:28 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Error\Renderer\HtmlErrorRenderer.php:37) in C:\xampp\htdocs\foodcoopshop\templates\element\layout\header.php on line 29
+Trace:
+Cake\Error\ErrorTrap->handleError() [internal], line ??
+C:\xampp\htdocs\foodcoopshop\templates\element\layout\header.php C:\xampp\htdocs\foodcoopshop\templates\element\layout\header.php, line 29
+C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php, line 1187
+Cake\View\View->_evaluate() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php, line 1144
+Cake\View\View->_render() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php, line 1689
+Cake\View\View->_renderElement() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php, line 676
+Cake\View\View->element() C:\xampp\htdocs\foodcoopshop\templates\layout\default.php, line 19
+C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php, line 1187
+Cake\View\View->_evaluate() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php, line 1144
+Cake\View\View->_render() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php, line 837
+Cake\View\View->renderLayout() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php, line 796
+Cake\View\View->render() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Controller\Controller.php, line 712
+Cake\Controller\Controller->render() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Controller\Controller.php, line 516
+Cake\Controller\Controller->invokeAction() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 166
+Cake\Controller\ControllerFactory->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 141
+Cake\Controller\ControllerFactory->invoke() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 362
+Cake\Http\BaseApplication->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 86
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\markstory\asset_compress\src\Middleware\AssetCompressMiddleware.php, line 64
+AssetCompress\Middleware\AssetCompressMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 115
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\authorization\src\Middleware\RequestAuthorizationMiddleware.php, line 110
+Authorization\Middleware\RequestAuthorizationMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\authorization\src\Middleware\AuthorizationMiddleware.php, line 136
+Authorization\Middleware\AuthorizationMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php, line 106
+Authentication\Middleware\AuthenticationMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Middleware\EncryptedCookieMiddleware.php, line 93
+Cake\Http\Middleware\EncryptedCookieMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 117
+Cake\Routing\Middleware\RoutingMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php, line 169
+Cake\Http\Middleware\CsrfProtectionMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 70
+Cake\Routing\Middleware\AssetMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+DebugKit\Middleware\DebugKitMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 60
+Cake\Http\Runner->run() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Server.php, line 104
+Cake\Http\Server->run() C:\xampp\htdocs\foodcoopshop\webroot\index.php, line 37
+[main]
+
+Request URL: /neues-passwort-anfordern
+Referer URL: http://foodcoopshop.local/neues-passwort-anfordern
+Client IP: 127.0.0.1
+2025-08-07 15:48:28 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Error\Renderer\HtmlErrorRenderer.php:37) in C:\xampp\htdocs\foodcoopshop\templates\element\layout\header.php on line 30
+Trace:
+Cake\Error\ErrorTrap->handleError() [internal], line ??
+C:\xampp\htdocs\foodcoopshop\templates\element\layout\header.php C:\xampp\htdocs\foodcoopshop\templates\element\layout\header.php, line 30
+C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php, line 1187
+Cake\View\View->_evaluate() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php, line 1144
+Cake\View\View->_render() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php, line 1689
+Cake\View\View->_renderElement() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php, line 676
+Cake\View\View->element() C:\xampp\htdocs\foodcoopshop\templates\layout\default.php, line 19
+C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php, line 1187
+Cake\View\View->_evaluate() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php, line 1144
+Cake\View\View->_render() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php, line 837
+Cake\View\View->renderLayout() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php, line 796
+Cake\View\View->render() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Controller\Controller.php, line 712
+Cake\Controller\Controller->render() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Controller\Controller.php, line 516
+Cake\Controller\Controller->invokeAction() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 166
+Cake\Controller\ControllerFactory->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 141
+Cake\Controller\ControllerFactory->invoke() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 362
+Cake\Http\BaseApplication->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 86
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\markstory\asset_compress\src\Middleware\AssetCompressMiddleware.php, line 64
+AssetCompress\Middleware\AssetCompressMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 115
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\authorization\src\Middleware\RequestAuthorizationMiddleware.php, line 110
+Authorization\Middleware\RequestAuthorizationMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\authorization\src\Middleware\AuthorizationMiddleware.php, line 136
+Authorization\Middleware\AuthorizationMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php, line 106
+Authentication\Middleware\AuthenticationMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Middleware\EncryptedCookieMiddleware.php, line 93
+Cake\Http\Middleware\EncryptedCookieMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 117
+Cake\Routing\Middleware\RoutingMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php, line 169
+Cake\Http\Middleware\CsrfProtectionMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 70
+Cake\Routing\Middleware\AssetMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+DebugKit\Middleware\DebugKitMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 60
+Cake\Http\Runner->run() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Server.php, line 104
+Cake\Http\Server->run() C:\xampp\htdocs\foodcoopshop\webroot\index.php, line 37
+[main]
+
+Request URL: /neues-passwort-anfordern
+Referer URL: http://foodcoopshop.local/neues-passwort-anfordern
+Client IP: 127.0.0.1
+2025-08-07 15:48:28 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Error\Renderer\HtmlErrorRenderer.php:37) in C:\xampp\htdocs\foodcoopshop\templates\element\layout\header.php on line 31
+Trace:
+Cake\Error\ErrorTrap->handleError() [internal], line ??
+C:\xampp\htdocs\foodcoopshop\templates\element\layout\header.php C:\xampp\htdocs\foodcoopshop\templates\element\layout\header.php, line 31
+C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php, line 1187
+Cake\View\View->_evaluate() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php, line 1144
+Cake\View\View->_render() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php, line 1689
+Cake\View\View->_renderElement() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php, line 676
+Cake\View\View->element() C:\xampp\htdocs\foodcoopshop\templates\layout\default.php, line 19
+C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php, line 1187
+Cake\View\View->_evaluate() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php, line 1144
+Cake\View\View->_render() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php, line 837
+Cake\View\View->renderLayout() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\View\View.php, line 796
+Cake\View\View->render() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Controller\Controller.php, line 712
+Cake\Controller\Controller->render() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Controller\Controller.php, line 516
+Cake\Controller\Controller->invokeAction() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 166
+Cake\Controller\ControllerFactory->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 141
+Cake\Controller\ControllerFactory->invoke() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 362
+Cake\Http\BaseApplication->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 86
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\markstory\asset_compress\src\Middleware\AssetCompressMiddleware.php, line 64
+AssetCompress\Middleware\AssetCompressMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 115
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\authorization\src\Middleware\RequestAuthorizationMiddleware.php, line 110
+Authorization\Middleware\RequestAuthorizationMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\authorization\src\Middleware\AuthorizationMiddleware.php, line 136
+Authorization\Middleware\AuthorizationMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php, line 106
+Authentication\Middleware\AuthenticationMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Middleware\EncryptedCookieMiddleware.php, line 93
+Cake\Http\Middleware\EncryptedCookieMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 117
+Cake\Routing\Middleware\RoutingMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php, line 169
+Cake\Http\Middleware\CsrfProtectionMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 70
+Cake\Routing\Middleware\AssetMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+DebugKit\Middleware\DebugKitMiddleware->process() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Runner.php, line 60
+Cake\Http\Runner->run() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Server.php, line 104
+Cake\Http\Server->run() C:\xampp\htdocs\foodcoopshop\webroot\index.php, line 37
+[main]
+
+Request URL: /neues-passwort-anfordern
+Referer URL: http://foodcoopshop.local/neues-passwort-anfordern
+Client IP: 127.0.0.1
+2025-08-07 15:48:28 warning: Unable to emit headers. Headers sent in file=C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Error\Renderer\HtmlErrorRenderer.php line=37 in C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php on line 65
+Trace:
+Cake\Error\ErrorTrap->handleError() [internal], line ??
+C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 65
+Cake\Http\ResponseEmitter->emit() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Server.php, line 148
+Cake\Http\Server->emit() C:\xampp\htdocs\foodcoopshop\webroot\index.php, line 37
+[main]
+
+Request URL: /neues-passwort-anfordern
+Referer URL: http://foodcoopshop.local/neues-passwort-anfordern
+Client IP: 127.0.0.1
+2025-08-07 15:48:28 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Error\Renderer\HtmlErrorRenderer.php:37) in C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php on line 159
+Trace:
+Cake\Error\ErrorTrap->handleError() [internal], line ??
+C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 159
+Cake\Http\ResponseEmitter->emitStatusLine() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 68
+Cake\Http\ResponseEmitter->emit() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Server.php, line 148
+Cake\Http\Server->emit() C:\xampp\htdocs\foodcoopshop\webroot\index.php, line 37
+[main]
+
+Request URL: /neues-passwort-anfordern
+Referer URL: http://foodcoopshop.local/neues-passwort-anfordern
+Client IP: 127.0.0.1
+2025-08-07 15:48:28 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Error\Renderer\HtmlErrorRenderer.php:37) in C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php on line 192
+Trace:
+Cake\Error\ErrorTrap->handleError() [internal], line ??
+C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 192
+Cake\Http\ResponseEmitter->emitHeaders() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 69
+Cake\Http\ResponseEmitter->emit() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Server.php, line 148
+Cake\Http\Server->emit() C:\xampp\htdocs\foodcoopshop\webroot\index.php, line 37
+[main]
+
+Request URL: /neues-passwort-anfordern
+Referer URL: http://foodcoopshop.local/neues-passwort-anfordern
+Client IP: 127.0.0.1
+2025-08-07 15:48:28 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Error\Renderer\HtmlErrorRenderer.php:37) in C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php on line 192
+Trace:
+Cake\Error\ErrorTrap->handleError() [internal], line ??
+C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 192
+Cake\Http\ResponseEmitter->emitHeaders() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 69
+Cake\Http\ResponseEmitter->emit() C:\xampp\htdocs\foodcoopshop\vendor\cakephp\cakephp\src\Http\Server.php, line 148
+Cake\Http\Server->emit() C:\xampp\htdocs\foodcoopshop\webroot\index.php, line 37
+[main]
+
+Request URL: /neues-passwort-anfordern
+Referer URL: http://foodcoopshop.local/neues-passwort-anfordern
+Client IP: 127.0.0.1
